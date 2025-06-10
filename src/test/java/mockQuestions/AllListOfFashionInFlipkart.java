@@ -20,26 +20,9 @@ public class AllListOfFashionInFlipkart
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
 		
-		driver.get("https://www.flipkart.com/");
+		driver.get("https://www.myntra.com/");
 		
 		int retry = 0;
-//		while(true) {
-//			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
-//			try {
-//				wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//span[text() = '✕']"))));
-//				Reporter.log("Popup got closed now", true);
-//				break;
-//			}
-//			catch(Exception e) {
-//				if(retry < 2) {
-//					Reporter.log("retry: " + (retry + 1), true);
-//					retry++;
-//				}
-//				else
-//					break;
-//			}
-//		}
-		
 
 		retry = 0;
 		while(true)
